@@ -1,0 +1,128 @@
+body {
+    background: rgb(40,181,235);
+    background: linear-gradient(90deg, rgba(40,181,235,1) 0%, rgba(4,0,66,1) 100%);
+}
+
+h1, h2 {
+    font-family: Alef;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+a {
+    color: white;
+}
+
+th, td {
+    border: solid 1px blue;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: azure;
+    font-family: Ink Free;
+    text-align: center;
+}
+
+table {
+    width: 1000px;
+    background: rgb(40,181,235);
+    background: linear-gradient(90deg, rgba(40,181,235,1) 0%, rgba(36,152,229,1) 30%, rgba(13,0,198,1) 60%, rgba(13,0,198,1) 90%, rgba(13,0,198,1) 100%);
+}
+
+input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+input[type=password] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+textarea {
+    width: 300px;
+    padding: 12px 20px;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+input[type=submit] {
+    background-color: #008CBA;
+    font-size: 20px;
+    padding: 14px 40px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid blue; /* Green */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+li {
+    float: left;
+    display: inline;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    width: fit-content;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: fit-content;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Comic Sans MS;
+}
+
+.active {
+    background-color: #008CBA;
+    color: white;
+}
+
+.active_2 {
+    background-color: azure;
+    color: black;
+}
+
+.active_2:hover {
+    color: azure;
+    background-color: lightskyblue;
+}
