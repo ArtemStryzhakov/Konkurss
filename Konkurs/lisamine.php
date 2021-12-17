@@ -1,13 +1,12 @@
 <?php
 // nimi lisamine konkurssi
+require_once ('conf.php');
 global $yhendus;
-
 if(!empty($_REQUEST['nimi'])){
-$kask = $yhendus -> prepare("insert into konkurss(nimi, pilt, lisamisaeg) values(?, ?, NOW())");
-$kask -> bind_param("ss", $_REQUEST['nimi'], $_REQUEST['pilt']);
-$kask -> execute();
-
-header("Location: $_SERVER[PHP_SELF]");
+    $kask = $yhendus -> prepare("insert into konkurss(nimi, pilt, lisamisaeg) values(?, ?, NOW())");
+    $kask -> bind_param("ss", $_REQUEST['nimi'], $_REQUEST['pilt']);
+    $kask -> execute();
+    header("Location: $_SERVER[PHP_SELF]");
 }
 ?>
 <html>
@@ -33,7 +32,3 @@ header("Location: $_SERVER[PHP_SELF]");
 </form>
 </body>
 </html>
-
-
-
-

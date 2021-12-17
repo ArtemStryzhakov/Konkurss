@@ -68,9 +68,13 @@ if(isset($_REQUEST['kustuta'])){
 <ul>
     <li><a class="active" href="haldus.php">Administreerimise leht</a></li>
     <li><a class="active_2" href="konkurss.php">Kasutaja leht</a></li>
-    <li><a class="active_2" href="https://github.com/ArtemStryzhakov/Konkurs">GitHub</a></li>
+    <li><a class="active_2" href="https://github.com/ArtemStryzhakov/konkurss">GitHub</a></li>
     <br>
-    <li><li><a href="lisamine.php">Kasutaja leht</a></li></li>
+    <li><a href="lisamine.php">Lisa</a></li>
+</ul>
+<ul>
+<li><a class="logout" style="background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(5,102,183,1) 38%, rgba(2,159,220,1) 74%, rgba(0,212,255,1) 100%); position: absolute; top: 20px; left: 450px; margin: 15px; border: solid 2px blue; border-radius: 20%;" name='logout' href="logout.php">Logout</a></li>
 </ul>
 
 <h1>FotoKonkurssi  halduse leht "Simple animal"</h1>
@@ -125,6 +129,5 @@ echo "</table>";
 echo "<br>";
 
 ?>
-
 </body>
 </html>

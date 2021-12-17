@@ -1,8 +1,8 @@
 <?php
-$servernimi = 'localhost';
-$kasutajanimi = 'artemstryz';
-$parool = '123456';
-$andmebaasinimi = 'artemstryz';
+$servernimi = 'd105623.mysql.zonevs.eu';
+$kasutajanimi = 'd105623_stryzhak';
+$parool = 'Art02fal+!';
+$andmebaasinimi = 'd105623_artemandm';
 $yhendus = new mysqli($servernimi, $kasutajanimi, $parool, $andmebaasinimi);
 $yhendus -> set_charset('UTF8');
 

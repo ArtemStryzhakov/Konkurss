@@ -27,8 +27,9 @@ if(isset($_REQUEST['uus_komment'])) {
 </head>
 <body>
 <ul>
+    <li><a class="active" href="haldus.php">Administreerimise leht</a></li>
     <li><a class="active_2" href="konkurss.php">Kasutaja leht</a></li>
-    <li><a class="active_2" href="https://github.com/ArtemStryzhakov/Konkurs">GitHub</a></li>
+    <li><a class="active_2" href="https://github.com/ArtemStryzhakov/konkurss">GitHub</a></li>
 </ul>
 <h1>FotoKonkurss "Simple animal"</h1>
 <?php
@@ -38,13 +39,13 @@ $kask -> bind_result($id, $nimi, $pilt, $kommentaar, $punktid);
 $kask->execute();
 
 echo "<table>";
-echo "<tr>
-<th>Nimi</th>
-<th>Pilt</th>
-<th>Kommentaarid</th>
-<th>Lisa kommentaar</th>
-<th>Punktid</th>
-</tr>";
+echo "<tr>";
+echo "<th>Nimi</th>";
+echo "<th>Pilt</th>";
+echo "<th>Kommentaarid</th>";
+echo "<th>Lisa kommentaar</th>";
+echo "<th>Punktid</th>"; 
+echo "</tr>";
 //fetch() - извлечение данных из набора данных
 while ($kask->fetch()) {
     echo "<tr>";
@@ -53,13 +54,13 @@ while ($kask->fetch()) {
     echo "<td>".nl2br($kommentaar)."</td>";
     echo "<td>
     <form action='?'>
-        <input type='hidden' name='uus_komment' value='$id';>
+        <input type='hidden' name='uus_komment' value='$id'>
         <input type='text' name='komment'>
         <input type='submit' value='OK'>
     </form>
     </td>";
     echo "<td style='width: 40px'>$punktid</td>";
-    echo "<td><a href='?punkt=$id'>+1 punkt</td>";
+    echo "<td><a href='?punkt=$id'>Lisa punkt</a></td>";
     echo "</tr>";
 }
 echo "</table>";
